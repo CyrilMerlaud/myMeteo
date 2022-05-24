@@ -1,0 +1,85 @@
+.clear {
+    background-image: url(./images/ciel_dégagé.jpeg);
+}
+
+.clouds {
+    background-image: url(./images/nuageux.jpg);
+}
+
+.rain {
+    background-image: url(./images/Pluie.jpg);
+}
+
+.snow {
+    background-image: url(./images/neige.jpg);
+}
+
+.mist {
+    background-image: url(./images/brouillard3.jpg);
+}
+
+.drizzle {
+    background-image: url(./images/drizzle_pluie_fine.jpg);
+}
+
+.hail {
+    background-image: url(./images/grêle2.jpeg);
+}
+
+.lightning {
+    background-image: url(./images/orageux.jpg);
+}
+
+
+body {
+    font-family: 'Trebuchet MS';                /* appliquer une police */
+    text-align: center;                         /* centrer le contenu textuel */
+    color: #fff;                              /* Appliquer une couleur au texte */                      
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Appliquer un ombrage avec transparence (rgba) au texte */
+    
+    height: 100vh;                              /* donner une hauteur */
+    overflow: hidden;                           /* cacher la scroll bar */
+    display: flex;                              /* activer la méthode flexbox */
+    justify-content: center;                    /* centrer le contenu horizontalement */
+    align-items: center;                        /* centrer le contenu verticalement */
+
+    background-position: center;                /* centrer la position de l'image */
+    background-size: cover;                     /* laisser l'image couvrir entièrement la page */
+}
+
+h1 {
+    font-size: 3em;                             /* préciser la taille de la police de la ville choisie */
+}
+
+i.wi {                                          /* weather icones */
+    font-size: 5em;                             /* régler la taille de la police */
+    line-height: 3em;                           /* donne un espace entre la ville et la température */
+}
+
+h2 {                                            
+font-size: 2em;                                 /* régler la taille de la police */
+    line-height: 1.5em;                         /* donne un espace entre la ville et la température */    
+}
+
+p {
+    font-size: 18px;                            /* régler la taille de la police */
+}
+
+.tooltip {
+    opacity: 0; 
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px; 
+    font-size: 18px;    
+    transition: opacity .3s, top .5s;  
+}
+
+
+h1:hover .tooltip {
+    top: 300px;                                 /* "Tapez une autre ville si vous le souhaitez" */
+    opacity: 1;
+}
