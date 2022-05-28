@@ -57,8 +57,7 @@ i.wi {                                          /* weather icones */
 }
 
 h2 {                                            
-font-size: 2em;                                 /* régler la taille de la police */
-    line-height: 1.5em;                         /* donne un espace entre la ville et la température */    
+font-size: 2em;                                 /* régler la taille de la police */                              
 }
 
 p {
@@ -80,6 +79,6 @@ p {
 
 
 h1:hover .tooltip {
-    top: 300px;                                 /* "Tapez une autre ville si vous le souhaitez" */
+    top: 150px;                                 /* "Tapez une autre ville si vous le souhaitez" */
     opacity: 1;
 }

@@ -7,6 +7,7 @@
     <title>Votre météo ! :)</title>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="icon" href="./images/ciel_dégagé.jpeg">
 </head>
 <body>
     <section id="app">
@@ -19,9 +20,19 @@
         
         <h2>
            <span id="temperature"></span> °C (<span id="conditions"></span>)
-           <p>↓ infos complémentaires ↓</p>
-           <p>humidité : <span id="humidity">45</span> %</p>
-           <p>Heure locale : <span id=""></span>???</p>
+           <br><br>
+           <p>↓ Infos complémentaires ↓</p>
+           <br>        
+           <p>Pression de l'air : <span id="pressure"></span> mbar</p>
+           <p>Vitesse du vent : <span id="speed"></span> km/h</p>
+           <p>Humidité : <span id="humidity"></span> %</p>
+           <p>Ressenti : <span id="feels_like"></span> °C</p>
+           <p>Température min : <span id="temp_min"></span> °C</p>
+           <p>Température max : <span id="temp_max"></span> °C</p>
+           <p>Pays : <span id="country"></span></p>
+           <p>Latitude : <span id="coord_lat"></span></p>
+           <p>Longitude : <span id="coord_lon"></span></p>
+           
         </h2>
     </section>
     <script src="script.js"></script>

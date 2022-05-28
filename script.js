@@ -64,6 +64,14 @@ function displayWeatherInfos(data) {
     const conditions = data.weather[0].main;
     const description = data.weather[0].description;
     const pressure = data.main.pressure;
+    const feels_like = data.main.feels_like;
+    const temp_min = data.main.temp_min;
+    const temp_max = data.main.temp_max;
+    const speed = data.wind.speed;
+    const country = data.sys.country;
+    const coord_lat = data.coord.lat;
+    const coord_lon = data.coord.lon;
+    
     
 
    // Lit dans le html => le texte qui contient l'id "ville" puis l'affiche
@@ -76,9 +84,17 @@ function displayWeatherInfos(data) {
     document.body.className = conditions.toLowerCase();
     
     document.getElementById('humidity').textContent = humidity;
-    
- 
-    console.log(pressure)
+    document.getElementById('pressure').textContent = pressure;
+    document.getElementById('feels_like').textContent = feels_like;
+    document.getElementById('temp_min').textContent = temp_min;
+    document.getElementById('temp_max').textContent = temp_max;
+    document.getElementById('speed').textContent = speed*4;     // en multipliant par 4, on se rapproche de près de la valeur réelle en km/h et arrondie au centième près seulement
+    document.getElementById('country').textContent = country;
+    document.getElementById('coord_lat').textContent = coord_lat;
+    document.getElementById('coord_lon').textContent = coord_lon;
+
+
+    console.log(data)
 
 }
 
